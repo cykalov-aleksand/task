@@ -1,4 +1,4 @@
-package org.example;
+package com.gridnine.testing;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +48,7 @@ public record ListFlight(List<Flight> flightList) {
                         }
                     }
                     break;
-                case "время между посадкой- взлетом больше":
+                case "время между посадкой - взлетом больше":
                     if (variable.get(2).equalsIgnoreCase("исключить")) {
                         for (Flight element : newFligthList) {
                             if (!element.timeOnGroundBetweenDepartures(Integer.parseInt(variable.get(1)))) {

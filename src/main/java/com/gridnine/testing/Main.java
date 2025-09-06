@@ -1,4 +1,4 @@
-package org.example;
+package com.gridnine.testing;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ public class Main {
 
         List<List<String>> listFilter1 = List.of(List.of("до текущего времени", "вылет", "исключить"));
         List<List<String>> listFilter2 = List.of(List.of("дата прилёта раньше даты вылета", "исключить"));
-        List<List<String>> listFilter3 = List.of(List.of("время между посадкой- взлетом больше", "2", "исключить"));
+        List<List<String>> listFilter3 = List.of(List.of("время между посадкой - взлетом больше", "2", "исключить"));
         ListFlight proba = new ListFlight(FlightBuilder.createFlights());
         try {
             for (Flight variable : proba.flightList()) {

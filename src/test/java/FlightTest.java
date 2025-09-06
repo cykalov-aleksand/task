@@ -1,5 +1,5 @@
-import org.example.Flight;
-import org.example.Segment;
+import com.gridnine.testing.Flight;
+import com.gridnine.testing.Segment;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
