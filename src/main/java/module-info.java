@@ -1,5 +1,5 @@
 module com.gridnine.testing {
-    requires java.base;
     requires junit;
+    requires java.logging;
     exports com.gridnine.testing;
 }

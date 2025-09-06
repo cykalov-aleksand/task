@@ -43,7 +43,7 @@ public class Flight {
     public boolean timeOnGroundBetweenDepartures(int hour) {
         if (segments.size() >= 2) {
             for (int count = 0; count < segments.size() - 1; count++) {
-                if (segments.get(count).getArrivalDate().plusHours(hour).isBefore(segments.get(count + 1).getDepartureDate())) {
+                if (segments.get(count).getArrivalDate().plusHours(hour-1).plusMinutes(59).isBefore(segments.get(count + 1).getDepartureDate())) {
                     return true;
                 }
             }
