@@ -13,7 +13,7 @@ public class ListFlightTest {
         List<List<String>> testString = List.of(
                 List.of("до текущего времени", "вылет", "исключить"),
                 List.of("дата прилёта раньше даты вылета", "исключить"),
-                List.of("время между посадкой- взлетом больше", "2", "исключить"));
+                List.of("время между посадкой - взлетом больше", "2", "исключить"));
         ListFlight test = new ListFlight(List.of(new Flight(List.of(new Segment(LocalDateTime.now().minusHours(1),
                         LocalDateTime.now().minusHours(2)))),new Flight(List.of(new Segment(LocalDateTime.now().plusMinutes(1),
                         LocalDateTime.now().plusHours(4)), new Segment(LocalDateTime.now().plusDays(2),
